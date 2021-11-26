@@ -1,1 +1,3 @@
-docker build -t <your docker hub id>/<dll name> .     this code builds your project with docker
+docker build -t <your docker hub id>/<dll name> .                    Builds your project with docker
+
+docker run 8080:80 -d <your docker hub id>/<dll name>                Executes your docker image
