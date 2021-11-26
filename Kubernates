@@ -1,0 +1,9 @@
+kubectl version                                                             Say your kubernates version
+
+kubectl get deployments                                                     Getting your kubernate deployments
+
+kubectl get pods                                                            Getting your pods on kubernates
+
+kubectl apply -f <YOUR CUBERNATES YAML FILE>                                Apply your docker container to kubernates
+
+kubectl delete deployment <YOUR DEPLOYMENT NAME>                            Deleting your deployment
