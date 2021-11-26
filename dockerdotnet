@@ -1,0 +1,1 @@
+docker build -t <your docker hub id>/<dll name> .     this code builds your project with docker
