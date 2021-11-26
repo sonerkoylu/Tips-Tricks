@@ -2,8 +2,7 @@
  
  code -r PlatformService
  
- dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
- 
+ dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection 
  dotnet add package Microsoft.EntityFrameworkCore -v 5.0.10
  dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.10
  dotnet add package Microsoft.EntityFrameworkCore.InMemory -v 5.0.10
