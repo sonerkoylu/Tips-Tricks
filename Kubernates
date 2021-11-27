@@ -4,6 +4,10 @@ kubectl get deployments                                                     Gett
 
 kubectl get pods                                                            Getting your pods on kubernates
 
+kubectl get namespace                                                       Getting namespaces
+
 kubectl apply -f <YOUR CUBERNATES YAML FILE>                                Apply your docker container to kubernates
 
 kubectl delete deployment <YOUR DEPLOYMENT NAME>                            Deleting your deployment
+
+kubectl rollout restart deployment platforms-depl                           Restart deployment
