@@ -6,6 +6,10 @@ kubectl get pods                                                            Gett
 
 kubectl get namespace                                                       Getting namespaces
 
+kubectl get storageclass                                                    Getting storage classes
+
+kubectl get pvc                                                             Getting persistence volumes
+
 kubectl apply -f <YOUR CUBERNATES YAML FILE>                                Apply your docker container to kubernates
 
 kubectl delete deployment <YOUR DEPLOYMENT NAME>                            Deleting your deployment
