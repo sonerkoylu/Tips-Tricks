@@ -15,3 +15,5 @@ kubectl apply -f <YOUR CUBERNATES YAML FILE>                                Appl
 kubectl delete deployment <YOUR DEPLOYMENT NAME>                            Deleting your deployment
 
 kubectl rollout restart deployment platforms-depl                           Restart deployment
+
+kubectl delete service/<YOUR SERVİCE NAME>                                  Delete Service
