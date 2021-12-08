@@ -10,10 +10,12 @@ kubectl get storageclass                                                    Gett
 
 kubectl get pvc                                                             Getting persistence volumes
 
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="APASSWORD" Create a sa user password
+
 kubectl apply -f <YOUR CUBERNATES YAML FILE>                                Apply your docker container to kubernates
 
 kubectl delete deployment <YOUR DEPLOYMENT NAME>                            Deleting your deployment
 
-kubectl rollout restart deployment platforms-depl                           Restart deployment
+kubectl rollout restart deployment <YOUR DEPLOYMENT NAME>                   Restart deployment
 
-kubectl delete service/<YOUR SERVİCE NAME>                                  Delete Service
+kubectl delete service/<YOUR SERVICE NAME>                                  Delete Service
