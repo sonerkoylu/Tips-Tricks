@@ -11,3 +11,5 @@ docker ps                                                            Lists your 
 docker start <container id>                                          Starts your container
 
 docker push <your docker hub id>                                     Push your container to your docker online
+
+docker-compose -f <YOUR YML FILE> up -d                              Execute/Download container image from file
