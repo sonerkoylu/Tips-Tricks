@@ -10,4 +10,7 @@ docker attach waxcdt ile waxcdt komut penceresi ile birleş.
 eosio-init -project wax komutu ile proje şablonunu oluştur.
 
 Build:
-cmake .. -DEOSIO_CDT_ROOT=/usr/local
+cmake ..
+
+Create WASM
+make
