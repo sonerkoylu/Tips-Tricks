@@ -1,0 +1,28 @@
+Keosd çalıştırmak:
+keosd &
+
+Testnet Bağlantısı:
+cleos -u https://testnet.waxsweden.org get info
+
+Nodeos çalıştırmak ve ayarları yüklemek:
+nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::http_plugin --access-control-allow-origin='*' --contracts-console --http-validate-host=false --verbose-http-errors >> nodeos.log 2>&1 &
+
+Api test:
+curl --request POST \
+--url http://127.0.0.1:8888/v1/chain/get_info \
+--header 'content-type: application/x-www-form-urlencoded; charset=UTF-8'
+
+Log okumak:
+tail -f nodeos.log
+
+Cüzdan oluşturmak:
+cleos wallet create --to-console
+
+Cüzdan açmak:
+cleos wallet open
+
+Nodeos Sonlandırma:
+pkill nodeos
+
+Keosd Sonlandırma:
+pkill keosd
