@@ -21,8 +21,8 @@ Windows 10+
 
 docker run -it --name waxdev -v c:\wax:/wax waxteam/dev bash
 
-Docker Port Yönlendirme:
-docker run -p 8888:8888 -it --name waxdev -v c:\wax:/wax waxteam/dev bash
+Docker Port Yönlendirme ve Built:
+docker run -p 8888:8888 -it --name waxdev -v c:\wax:/wax waxteam/dev:wax-1.6.1-2.0.13wax03 bash
 
 docker run -it --name waxcdt -v c:\wax:/wax waxteam/cdt bash
 
