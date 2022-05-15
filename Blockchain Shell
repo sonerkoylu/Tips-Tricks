@@ -27,6 +27,9 @@ cleos wallet open
 Cleos Wallet Parolalı açmak
 cleos wallet unlock --password PW5KRXKVx25yjL3FvxxY9YxYxxYY9Yxx99yyXTRH8DjppKpD9tKtVz
 
+Cleos Account Bulmak
+cleos get account {accountname} //waxsc1
+
 Nodeos Sonlandırma:
 pkill nodeos
 
