@@ -1,0 +1,30 @@
+https://developer.wax.io/en/dapp-development/docker-setup/
+
+Containers:
+
+1- waxteam/dev
+--Development image containing WAX blockchain binaries and code, CDT, compilers and some dev tools
+
+docker pull waxteam/dev
+
+2-waxteam/cdt
+--Image containing the CDT required to compile smart contracts
+
+docker pull waxteam/cdt
+
+3-waxteam/production
+Production ready images
+
+docker pull waxteam/production
+
+Windows 10+
+
+docker run -it --name waxdev -v c:\wax:/wax waxteam/dev bash
+
+Docker Port Yönlendirme:
+docker run -p 8888:8888 -it --name waxdev -v c:\wax:/wax waxteam/dev bash
+
+docker run -it --name waxcdt -v c:\wax:/wax waxteam/cdt bash
+
+docker start waxdev
+docker attach waxdev
