@@ -14,3 +14,18 @@ cmake ..
 
 Create WASM
 make
+
+Account Oluşturma:
+cleos wallet open
+cleos wallet unlock --password {pwd}
+## cleos wallet create_key
+## cleos create account eosio {account-name} {created_key}
+
+
+Account görüntüleme
+cleos get account {account-name}
+
+Deploy wax to local blockchain:
+go to wax build/wax folder
+
+cleos set contract {account-name} . -p waxsc1@active
